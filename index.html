@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    
+    <nav id="desktop-nav">
+        <div class="logo">Declan Cross</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Declan Cross</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./Assets/GradPhotoCropped.png" alt="Declan Cross Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Declan Cross</h1>
+            <p class="section__text__p2">Games Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/Declan Cross CV.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="social-container">
+                <img src="./Assets/linkedin.png" alt="My LinkedIn Profile" 
+                class="icon" onclick="location.href='https://www.linkedin.com/in/declancross'">
+                <img src="./Assets/github.png" alt="My Github Profile" 
+                class="icon" onclick="location.href='https://github.com/Crossy-0'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./Assets/pfp cropped 2.png" alt="Profile Picture"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>5+ years <br>Games Development<br></p>
+
+                    </div>
+                    <div class="details-container">
+                        <img src="./Assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc. Computer Science <br></p>
+                        <p class="details-subtext">(First-Class Honours)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hi!<br> I'm Declan, a computer science graduate from the University of Liverpool. 
+                        <br>Over the course of the last 5 years, I have been learning how to program and develop games within unity through various online resources and courses while undergoing my studies.
+                        <br><br>After working briefly as a QA tester within a small indie studio based in Liverpool, I realised what it was like to be a part of such a creative team and I fell in love with this. 
+                        Having worked on a large number of projects both within university and outside of my studies, I have developed my own skills in organisation, forward thinking, and good coding practices.                        
+                        <br><br>Like many students finishing their degree however, I realised I was short of one key thing: A portfolio to show my work off! 
+                        Over the last 6-8 months since finishing my degree I have developed and released my game 'Blasteroids' on steam, and nearing the end of January 2025 I will be forming a small indie team to develop my second game in the hopes to enter into the Tranzfuser competition.
+                        As the game idea was my own, I will be in charge of leading and managing this team throughout the development process (something I can say I am truly excited to be a part of).                         
+                        </p>
+
+                    <p>
+                        <br>I am now currently working towards attainting a masters degree in Computer Games Development with Manchester Metropolitan University, and I am set to graduate Sep 2025.
+                        Over this year I am aiming to fill in some gaps in my knowledge, especially when it comes to skills regarding unreal development, leadership, working with a team, and github version control.
+                        
+                        </p>
+
+                    <p><br>If you are interested in taking a look at some of my projects, you can find some of my main projects listed below, and
+                        if you have any questions please feel free to contact me :)</p>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Haskell</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>C++</h3>
+                                <p>Somewhat Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Somewhat Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Development Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Unity</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Github</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Blender</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Steamworks</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Unreal</h3>
+                                <p>Somewhat Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Multiplayer Networking</h3>
+                                <p>Currently Learning</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/Asteroids_Project_Photo.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Blasteroids</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://store.steampowered.com/app/3370520/Blasteroids'">
+                            Steam Page
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/Bowling Project Photo.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Bowling</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Assets/ProcGenProjectPhoto.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Procedurally Generated Dungeon</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <img src="./Assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./Assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:declan.c.cross@gmail.com" target="_blank">Declan.C.Cross@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./Assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/declancross">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./Assets/steamIcon.png" alt="Steam icon" class="icon contact-icon">
+                <p><a href="https://store.steampowered.com/search/?developer=Crossy">Steam Page</a></p>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Declan Cross. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
