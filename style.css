@@ -153,6 +153,7 @@ section {
 
 .section-container {
     display: flex;
+    padding-top: 2rem;
 }
 
 /* PROFILE SECTION */
